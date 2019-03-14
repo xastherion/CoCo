@@ -29,10 +29,10 @@ for cont in lista_cmd:
         framex = Frame(master)
 
         group = LabelFrame(framex, text=leer_lista.get(), bg="blue")
-        Label(group, text=leer_lista.get()).pack(side = TOP)
-        Entry(group, textvariable=leer_lista, width=100).pack(side = LEFT)
-        Button(group, text='Do it!', command=lambda: os.system(leer_lista.get())).pack(side = LEFT)
-        group.pack(side = LEFT)
+        Label(group, text=leer_lista.get()).pack()
+        Entry(group, textvariable=leer_lista, width=100).pack()
+        Button(group, text='Do it!', command=lambda: os.system(leer_lista.get())).pack()
+        group.pack()
         framex.pack()
 
 #        w.pack(side = LEFT)

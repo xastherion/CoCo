@@ -12,6 +12,7 @@
 
 import os
 from tkinter import *
+from os import *
 
 master = Tk()
 master.title('Commands_Container')
@@ -24,26 +25,17 @@ matrix = [
     [3,     'erstellt file','erstell eine Datei "test.txt" in das aktuelle Verzeichnis',    'touch test.txt']
         ]
 
-#print(matrix[1][2])
-#print((matrix))
-cont = 0
-largo = int(len(matrix))
-#rango = int(range(matrix))
-print("largo", largo)
-#print("rango", rango)
-for cont in np.nditer(matrix):
-        #leer_lista = StringVar(master, value=lista_cmd[cont])
-        print(cont)
+for cont in matrix:
         framex = Frame(master)
-
-        group = LabelFrame(framex, text=(matrix[cont][1]), bg="blue")
-        Label(group, text=(matrix[cont][2])).pack(side = TOP)
-        Entry(group, textvariable=(matrix[cont][3]), width=100).pack(side = LEFT)
-        Button(group, text='Do it!', command=lambda: os.system(leer_lista.get())).pack(side = LEFT)
+        group = LabelFrame(framex, text=cont[1], bg="grey")
+        leer_lista = StringVar(master, value=cont[3])
+        print(leer_lista.get())
+        command = leer_lista.get()
+        Label(group, text=cont[2]).pack()
+        Entry(group, textvariable=leer_lista, width=100).pack()
+        Button(group, text='Do it!', command=lambda: os.system(command)).pack()
         group.pack(side = LEFT)
         framex.pack()
-
-#        w.pack(side = LEFT)
 
 exit_button = Button(master, text='Exit', command=lambda : quit()).pack()
 mainloop()

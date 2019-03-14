@@ -4,5 +4,6 @@ matrix = [
     [3, 'mango', 'anaranjado']
         ]
 
-print(matrix[0][0])
+for elements in matrix:
+    print(elements)
 
