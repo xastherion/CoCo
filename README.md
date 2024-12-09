@@ -4,6 +4,8 @@
 
 Sure, a experienced Console-User know a lot of shell commands, but the options too?, and the syntax? and the last used variables, etc. etc. etc.
 
+![coco_screen](https://github.com/user-attachments/assets/a365e7f8-3406-45fc-85e2-d998958a4896)
+
 Sure, you can find old commands on history... but from wich shell? from wich server/client?, was that linux, macos, bsd, or ps? and so and so on.
 
 CoCo allow you to save and export easily all your favorites shell commands (and another like python too) in a GUI interface for many Operativ Systems compatible.
