@@ -1,4 +1,4 @@
-# CoCo
+# CoCo 🥥
 
 ## A GUI for shell commands saved on a simple container.
 
